@@ -1,0 +1,10 @@
+package com.netty.filter;
+
+import io.netty.handler.codec.http.FullHttpResponse;
+
+public class HeaderHttpResponseFilter implements HttpResponseFilter {
+
+    public void filter(FullHttpResponse response) {
+        response.headers().set("kk", "java-1-nio");
+    }
+}

@@ -72,7 +72,7 @@ public class HttpHandler extends ChannelInboundHandlerAdapter {
         }
     }
 
-    @Override
+
     public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause) {
         cause.printStackTrace();
         ctx.close();
